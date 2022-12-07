@@ -50,6 +50,7 @@ update your simulation so that the Elves know where they should stand to be read
 After the rearrangement procedure completes, what crate ends up on top of each stack?
 
 """
+from day5.part1 import result
 
 files = {'test': 'test.txt', 'prod': 'input.txt'}
 
@@ -86,14 +87,6 @@ def apply_rules(stacks, rules):
         value.reverse()
         stacks[destination].extend(value)
     return stacks
-
-
-def result(stacks):
-    keys = sorted(stacks.keys())
-    res = ""
-    for k in keys:
-        res = res + stacks[k].pop()
-    return res
 
 
 if __name__ == "__main__":
