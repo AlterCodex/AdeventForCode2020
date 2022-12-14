@@ -1,0 +1,1 @@
+files = {'test': 'test.txt', 'prod': 'input.txt'}
